@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.10.0 on win32)" generated="20230721 16:35:22.697" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\91812\PycharmProjects\RobotFramework\SuaceLabInventory\Tests">
+<suite id="s1-s1" name="UI" source="C:\Users\91812\PycharmProjects\RobotFramework\SuaceLabInventory\Tests\UI">
+<suite id="s1-s1-s1" name="TC Cart" source="C:\Users\91812\PycharmProjects\RobotFramework\SuaceLabInventory\Tests\UI\TC_Cart.robot">
+<test id="s1-s1-s1-t1" name="Verify the add product and verifying the shopping cart badge value">
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>create webdriver</arg>
+<arg>CHROME</arg>
+<arg>executable_path="SuaceLabInventory/Driver/chromedriver.exe"</arg>
+<arg>Open Browser</arg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<arg>AND</arg>
+<arg>Maximize Browser Window</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>CHROME</arg>
+<arg>executable_path="SuaceLabInventory/Driver/chromedriver.exe"</arg>
+<arg>Open Browser</arg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230721 16:35:22.950" level="FAIL">Keyword 'SeleniumLibrary.Create Webdriver' got positional argument after named arguments.</msg>
+<status status="FAIL" starttime="20230721 16:35:22.950" endtime="20230721 16:35:22.950"/>
+</kw>
+<status status="FAIL" starttime="20230721 16:35:22.950" endtime="20230721 16:35:22.950"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230721 16:35:22.950" endtime="20230721 16:35:22.950"/>
+</kw>
+<doc>Verify the add product and verifying the shopping cart badge value</doc>
+<tag>regression</tag>
+<tag>smoke1</tag>
+<status status="FAIL" starttime="20230721 16:35:22.950" endtime="20230721 16:35:22.950">Setup failed:
+Keyword 'SeleniumLibrary.Create Webdriver' got positional argument after named arguments.</status>
+</test>
+<status status="FAIL" starttime="20230721 16:35:22.730" endtime="20230721 16:35:22.950"/>
+</suite>
+<status status="FAIL" starttime="20230721 16:35:22.722" endtime="20230721 16:35:22.950"/>
+</suite>
+<status status="FAIL" starttime="20230721 16:35:22.697" endtime="20230721 16:35:22.950"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">regression</stat>
+<stat pass="0" fail="1" skip="0">smoke1</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="UI">Tests.UI</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TC Cart">Tests.UI.TC Cart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
