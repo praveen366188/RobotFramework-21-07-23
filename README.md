@@ -36,3 +36,5 @@ Step 7 : download chromedriver and put it in the scripts folder
 step 8 run the robot file
   robot --include smoke SuaceLabInventory/Tests/
   it will execute all the test with tag smoke.
+
+<img width="960" alt="image" src="https://github.com/praveen366188/RobotFramework-21-07-23/assets/55683483/1be83cfc-f851-4cb1-a79b-7148e3d0770d">
